@@ -13,10 +13,12 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            TreeImageView()
+            TreeImageView(currentGame: gameViewModel.currentGame)
             KeyboardView(currentGame: $gameViewModel.currentGame)
-            Text("CorrectWord").font(.system(size: 30))
-            Text("Score").font(.system(size: 20))
+            Text("CorrectWord")
+                .font(.system(size: 30))
+            Text("Wins: \(gameViewModel.totalWins), Losses: \(gameViewModel.totalLosses)")
+                .font(.system(size: 20))
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .padding()

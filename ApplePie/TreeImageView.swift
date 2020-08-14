@@ -9,8 +9,10 @@
 import SwiftUI
 
 struct TreeImageView: View {
+    var currentGame: Game
+    
     var body: some View {
-        Image("Tree 0")
+        Image("Tree \(currentGame.incorrectMovesRemaining)")
             .resizable()
             .aspectRatio(contentMode: .fit)
     }
@@ -18,6 +20,6 @@ struct TreeImageView: View {
 
 struct TreeImageView_Previews: PreviewProvider {
     static var previews: some View {
-        TreeImageView()
+        TreeImageView(currentGame: GameViewModel().currentGame)
     }
 }
