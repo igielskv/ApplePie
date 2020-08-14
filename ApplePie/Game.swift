@@ -13,7 +13,7 @@ struct Game {
     var incorrectMovesRemaining: Int
     var guessedLetters: String
     
-    mutating func playerGuessed(letter: Character) {
+    mutating func playerGuessed(letter: String) {
         guessedLetters.append(letter)
         if !word.contains(letter) {
             incorrectMovesRemaining -= 1

@@ -10,7 +10,7 @@ import SwiftUI
 
 struct KeyboardView: View {
     
-    @Binding var guessedLetters: String
+    @Binding var currentGame: Game
     
     var body: some View {
         VStack {
@@ -23,10 +23,10 @@ struct KeyboardView: View {
     func keysFor(letters: String) -> some View {
         HStack {
             ForEach(letters.map { String($0) }, id: \.self) { letter in
-                Button(action: { self.guessedLetters.append(letter.lowercased()) }) {
+                Button(action: { self.currentGame.playerGuessed(letter: letter.lowercased()) }) {
                     Text(letter)
                 }
-                .disabled(self.guessedLetters.contains(letter.lowercased()))
+                .disabled(self.currentGame.guessedLetters.contains(letter.lowercased()))
             }
         }
     }
@@ -34,6 +34,6 @@ struct KeyboardView: View {
 
 struct KeyboardView_Previews: PreviewProvider {
     static var previews: some View {
-        KeyboardView(guessedLetters: .constant(String()))
+        KeyboardView(currentGame: .constant(GameViewModel().currentGame))
     }
 }
