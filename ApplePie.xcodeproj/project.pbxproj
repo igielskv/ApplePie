@@ -12,6 +12,8 @@
 		9F0D08BF24E6815400F7F8B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F0D08BE24E6815400F7F8B9 /* Assets.xcassets */; };
 		9F0D08C224E6815400F7F8B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F0D08C124E6815400F7F8B9 /* Preview Assets.xcassets */; };
 		9F0D08C524E6815400F7F8B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F0D08C324E6815400F7F8B9 /* Main.storyboard */; };
+		9F0D08CE24E6822C00F7F8B9 /* TreeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0D08CD24E6822C00F7F8B9 /* TreeImageView.swift */; };
+		9F0D08D024E6833300F7F8B9 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0D08CF24E6833300F7F8B9 /* KeyboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		9F0D08C424E6815400F7F8B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F0D08C624E6815400F7F8B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F0D08C724E6815400F7F8B9 /* ApplePie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ApplePie.entitlements; sourceTree = "<group>"; };
+		9F0D08CD24E6822C00F7F8B9 /* TreeImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeImageView.swift; sourceTree = "<group>"; };
+		9F0D08CF24E6833300F7F8B9 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 			children = (
 				9F0D08BA24E6815400F7F8B9 /* AppDelegate.swift */,
 				9F0D08BC24E6815400F7F8B9 /* ContentView.swift */,
+				9F0D08CD24E6822C00F7F8B9 /* TreeImageView.swift */,
+				9F0D08CF24E6833300F7F8B9 /* KeyboardView.swift */,
 				9F0D08BE24E6815400F7F8B9 /* Assets.xcassets */,
 				9F0D08C324E6815400F7F8B9 /* Main.storyboard */,
 				9F0D08C624E6815400F7F8B9 /* Info.plist */,
@@ -145,6 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F0D08CE24E6822C00F7F8B9 /* TreeImageView.swift in Sources */,
+				9F0D08D024E6833300F7F8B9 /* KeyboardView.swift in Sources */,
 				9F0D08BD24E6815400F7F8B9 /* ContentView.swift in Sources */,
 				9F0D08BB24E6815400F7F8B9 /* AppDelegate.swift in Sources */,
 			);
