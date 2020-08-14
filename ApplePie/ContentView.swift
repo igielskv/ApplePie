@@ -15,7 +15,7 @@ struct ContentView: View {
         VStack {
             TreeImageView(currentGame: gameViewModel.currentGame)
             KeyboardView(currentGame: $gameViewModel.currentGame)
-            Text("CorrectWord")
+            CorrectWordView(currentGame: gameViewModel.currentGame)
                 .font(.system(size: 30))
             Text("Wins: \(gameViewModel.totalWins), Losses: \(gameViewModel.totalLosses)")
                 .font(.system(size: 20))

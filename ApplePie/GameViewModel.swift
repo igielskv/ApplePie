@@ -17,14 +17,26 @@ class GameViewModel: ObservableObject {
     var totalWins = 0
     var totalLosses = 0
     
-    @Published var currentGame: Game!
+    @Published var currentGame: Game! {
+        didSet {
+            if currentGame.incorrectMovesRemaining == 0 {
+                totalLosses += 1
+                newRound()
+            } else if currentGame.word == currentGame.formattedWord {
+                totalWins += 1
+                newRound()
+            }
+        }
+    }
     
     init() {
         newRound()
     }
     
     func newRound() {
-        let newWord = listOfWords.removeFirst()
-        currentGame = Game(word: newWord, incorrectMovesRemaining: incorrectMovesAllowed, guessedLetters: String())
+        if !listOfWords.isEmpty {
+            let newWord = listOfWords.removeFirst()
+            currentGame = Game(word: newWord, incorrectMovesRemaining: incorrectMovesAllowed, guessedLetters: String())
+        }
     }
 }

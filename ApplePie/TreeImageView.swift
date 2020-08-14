@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct TreeImageView: View {
-    var currentGame: Game
+    let currentGame: Game
     
     var body: some View {
         Image("Tree \(currentGame.incorrectMovesRemaining)")

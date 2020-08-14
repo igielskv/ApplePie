@@ -15,6 +15,7 @@
 		9F0D08CE24E6822C00F7F8B9 /* TreeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0D08CD24E6822C00F7F8B9 /* TreeImageView.swift */; };
 		9F0D08D024E6833300F7F8B9 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0D08CF24E6833300F7F8B9 /* KeyboardView.swift */; };
 		9F621E4524E69F7B0080FE68 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F621E4424E69F7B0080FE68 /* Game.swift */; };
+		9F96F33524E72A4C00BF408A /* CorrectWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F96F33424E72A4C00BF408A /* CorrectWordView.swift */; };
 		9FB9DB4424E6FE7700B4925E /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB9DB4324E6FE7700B4925E /* GameViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		9F0D08CD24E6822C00F7F8B9 /* TreeImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeImageView.swift; sourceTree = "<group>"; };
 		9F0D08CF24E6833300F7F8B9 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		9F621E4424E69F7B0080FE68 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		9F96F33424E72A4C00BF408A /* CorrectWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectWordView.swift; sourceTree = "<group>"; };
 		9FB9DB4324E6FE7700B4925E /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +69,7 @@
 				9F0D08BC24E6815400F7F8B9 /* ContentView.swift */,
 				9F0D08CD24E6822C00F7F8B9 /* TreeImageView.swift */,
 				9F0D08CF24E6833300F7F8B9 /* KeyboardView.swift */,
+				9F96F33424E72A4C00BF408A /* CorrectWordView.swift */,
 				9FB9DB4324E6FE7700B4925E /* GameViewModel.swift */,
 				9F621E4424E69F7B0080FE68 /* Game.swift */,
 				9F0D08BE24E6815400F7F8B9 /* Assets.xcassets */,
@@ -160,6 +163,7 @@
 				9FB9DB4424E6FE7700B4925E /* GameViewModel.swift in Sources */,
 				9F0D08CE24E6822C00F7F8B9 /* TreeImageView.swift in Sources */,
 				9F621E4524E69F7B0080FE68 /* Game.swift in Sources */,
+				9F96F33524E72A4C00BF408A /* CorrectWordView.swift in Sources */,
 				9F0D08D024E6833300F7F8B9 /* KeyboardView.swift in Sources */,
 				9F0D08BD24E6815400F7F8B9 /* ContentView.swift in Sources */,
 				9F0D08BB24E6815400F7F8B9 /* AppDelegate.swift in Sources */,
