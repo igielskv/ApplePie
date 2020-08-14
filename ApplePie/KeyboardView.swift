@@ -9,40 +9,31 @@
 import SwiftUI
 
 struct KeyboardView: View {
+    
+    @Binding var guessedLetters: String
+    
     var body: some View {
         VStack {
-            KeysFor(letters: "QWERTYUIOP")
-            KeysFor(letters: "ASDFGHJKL")
-            KeysFor(letters: "ZXCVBNM")
+            keysFor(letters: "QWERTYUIOP")
+            keysFor(letters: "ASDFGHJKL")
+            keysFor(letters: "ZXCVBNM")
         }
     }
-}
-
-struct KeysFor: View {
     
-    let letters: String
-    
-    @State private var tappedLetters = String()
-    
-    var body: some View {
+    func keysFor(letters: String) -> some View {
         HStack {
             ForEach(letters.map { String($0) }, id: \.self) { letter in
-                Button(action: { self.buttonTapped(letter: letter) }) {
+                Button(action: { self.guessedLetters.append(letter.lowercased()) }) {
                     Text(letter)
                 }
-                .disabled(self.tappedLetters.contains(letter))
+                .disabled(self.guessedLetters.contains(letter.lowercased()))
             }
         }
-    }
-    
-    func buttonTapped(letter: String) {
-        print("Tapped Button with letter '\(letter)'")
-        tappedLetters.append(letter)
     }
 }
 
 struct KeyboardView_Previews: PreviewProvider {
     static var previews: some View {
-        KeyboardView()
+        KeyboardView(guessedLetters: .constant(String()))
     }
 }

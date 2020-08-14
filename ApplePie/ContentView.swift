@@ -9,10 +9,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var gameViewModel: GameViewModel
+    
     var body: some View {
         VStack {
             TreeImageView()
-            KeyboardView()
+            KeyboardView(guessedLetters: $gameViewModel.currentGame.guessedLetters)
             Text("CorrectWord").font(.system(size: 30))
             Text("Score").font(.system(size: 20))
         }
@@ -24,6 +26,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(gameViewModel: GameViewModel())
     }
 }
