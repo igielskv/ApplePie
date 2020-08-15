@@ -13,18 +13,20 @@ struct KeyboardView: View {
     @Binding var currentGame: Game
     
     var body: some View {
-        VStack {
+        VStack(spacing: 10) {
             keysFor(letters: "QWERTYUIOP")
             keysFor(letters: "ASDFGHJKL")
             keysFor(letters: "ZXCVBNM")
         }
+        .padding()
     }
     
     func keysFor(letters: String) -> some View {
-        HStack {
+        HStack(spacing: 20) {
             ForEach(letters.map { String($0) }, id: \.self) { letter in
                 Button(action: { self.currentGame.playerGuessed(letter: letter.lowercased()) }) {
                     Text(letter)
+                        .font(Font.system(size: 30.0))
                 }
                 .disabled(self.currentGame.guessedLetters.contains(letter.lowercased()))
             }
